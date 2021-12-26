@@ -5,6 +5,16 @@
 body{
     overflow: hidden;
 }
+.instruction{
+    background-color:black;
+    color: white;
+    position: absolute;
+    top: 3px;
+    left:10px;
+    padding: 6px;
+    font-size: 20px;
+}
+
 .container{
   background-image: url('bg.jpg');
   height: 100vh;
@@ -30,10 +40,14 @@ body{
     left: 90vw;
 }
 .gameOver{
-    position: relative;
+    position: absolute;
     top:3px;
-    color: rgb(255, 0, 0);
+    background-color:black;
+    left: 650px;
+    color: white;
     font-size: 30px;
+    padding: 5px;
+    border-radius: 10px;
     text-align: center; 
     font-family: 'Ubuntu', sans-serif;
 }
@@ -50,7 +64,7 @@ body{
     animation: obstacleAni 3.5s linear infinite;
 }
 #scoreCont{
-    font-size: 20px;
+    font-size: 30px;
     background-color: black;
     color: white;
     font-weight: bold;
@@ -106,7 +120,7 @@ body{
 .arrow{
     background-image: url('arr2.png');
     height: 40px;
-    width: 120px;
+    width: 124px;
     background-size: cover;
     /*animation: thunder 3s linear infinite;*/
     position: absolute;
