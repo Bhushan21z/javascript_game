@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.container{
+  background-image: url('bg.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+.dino{
+    background-image: url('thor2.png');
+    background-size: cover;
+    height: 160px;
+    width: 150px;
+    position: absolute;
+    bottom: 30px;
+    left: 5vw;
+}
+.obstacle4{
+    background-image: url('loki2.png');
+    background-size: cover;
+    height: 180px;
+    width: 150px;
+    position: absolute;
+    bottom: 30px;
+    left: 90vw;
+}
+.gameOver{
+    position: relative;
+    top:3px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    text-align: center; 
+    font-family: 'Ubuntu', sans-serif;
+}
+.obstacleAni1{
+    animation: obstacleAni 3.5s linear infinite;
+}
+.obstacleAni4{
+    animation: obstacleAni 3.5s linear infinite;
+}
+.obstacleAni2{
+    animation: obstacleAni 3.5s linear infinite;
+}
+.obstacleAni3{
+    animation: obstacleAni 3.5s linear infinite;
+}
+#scoreCont{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: 60vw;
+    top: 3px;
+    border: 2px solid black;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+}
+.thunder{
+    background-image: url('thund2.png');
+    height: 100px;
+    width: 130px;
+    background-size: cover;
+    /*animation: thunder 3s linear infinite;*/
+    position: absolute;
+    bottom: 120px;
+    left: 5vw;
+    opacity: 0;
+}
+
+.captain{
+    background-image: url('cap.png');
+    background-size: cover;
+    height: 160px;
+    width: 150px;
+    position: absolute;
+    bottom: 220px;
+    left: 5vw;
+}
+.shield{
+    background-image: url('shi2.png');
+    height: 70px;
+    width: 110px;
+    background-size: cover;
+    /*animation: thunder 3s linear infinite;*/
+    position: absolute;
+    bottom: 290px;
+    left: 5vw;
+    opacity: 0;
+}
+.hawkeye{
+    background-image: url('hawkeye.png');
+    background-size: cover;
+    height: 160px;
+    width: 150px;
+    position: absolute;
+    bottom: 400px;
+    left: 5vw;
+}
+.arrow{
+    background-image: url('arr2.png');
+    height: 40px;
+    width: 120px;
+    background-size: cover;
+    /*animation: thunder 3s linear infinite;*/
+    position: absolute;
+    bottom: 460px;
+    left: 5vw;
+    opacity: 0;
+}
+.ironman{
+    background-image: url('ironman.png');
+    background-size: cover;
+    height: 130px;
+    width: 150px;
+    position: absolute;
+    bottom: 580px;
+    left: 5vw;
+}
+.laser{
+    background-image: url('las4.png');
+    height: 73px;
+    width: 90px;
+    background-size: cover;
+    /*animation: thunder 3s linear infinite;*/
+    position: absolute;
+    bottom: 640px;
+    left: 5vw;
+    opacity: 0;
+}
+.obstacle1{
+    background-image: url('loki2.png');
+    background-size: cover;
+    height: 180px;
+    width: 150px;
+    position: absolute;
+    bottom: 560px;
+    left: 90vw;
+}
+.obstacle2{
+    background-image: url('loki2.png');
+    background-size: cover;
+    height: 180px;
+    width: 150px;
+    position: absolute;
+    bottom: 400px;
+    left: 90vw;
+}
+.obstacle3{
+    background-image: url('loki2.png');
+    background-size: cover;
+    height: 180px;
+    width: 150px;
+    position: absolute;
+    bottom: 220px;
+    left: 90vw;
+}
+.thunder21{
+    /*background-image: url('thunder.png');*/
+    animation: thunder2 3s linear infinite;
+    opacity: 1;
+}
+.thunder22{
+    /*background-image: url('thunder.png');*/
+    animation: thunder2 3s linear infinite;
+    opacity: 1;
+}
+.thunder23{
+    /*background-image: url('thunder.png');*/
+    animation: thunder2 3s linear infinite;
+    opacity: 1;
+}
+.thunder24{
+    /*background-image: url('thunder.png');*/
+    animation: thunder2 3s linear infinite;
+    opacity: 1;
+}
+.scoreOVER{
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    top:30vh;
+    left:40vw;
+    padding: 12px;
+    border-radius: 10px solid red;
+}
+.gameOVER{
+    position: absolute;
+    background-color: black;
+    color: white;;
+    font-size: 40px;
+    top:45vh;
+    left: 30vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+@keyframes thunder2{
+    0%{
+        left: 5vw;
+    }
+    100%{
+        left: 130vw;
+    }
+}
